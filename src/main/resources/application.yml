@@ -1,0 +1,21 @@
+spring:
+  profiles: dev
+mqdetails:
+  cluster:
+    serverhost: 10.10.xx.xx
+    port: 1414
+    user: abc
+    pass: abc
+    ssl: TLS_***
+  qmgrs:
+    qmgrname: qmgr
+    channel: channelname
+  queues:
+    - ibm-queue1
+    - ibm-queue2
+security:
+  key-tab-path: security/*.keytab
+  trust-store-path: keystore/truststore.jks
+  trust-store-password: pass
+  ibm-mq-cipher: false
+  queuejks: */mq.jks
